@@ -25,7 +25,7 @@ git checkout-index -u -a -f
 
 # Sync the built files into it
 # Deliberately doesn't delete files to not break links (maybe)
-rsync -v -r _build/htdocs/ _build/_deploy/
+rsync -c -v -r _build/htdocs/ _build/_deploy/
 
 # Sync the index
 # git update-index --add --verbose
