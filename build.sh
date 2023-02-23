@@ -11,7 +11,7 @@ mkdir -p _build/htdocs
 
 rsync \
     --exclude=".nojekyll" \
-    --delete-after -c -v -r src/ _build/htdocs/
+    --delete-after -c -v -r static/ src/ _build/htdocs/
 touch _build/htdocs/.nojekyll
 
 echo "<!-- build.sh $(date) -->" >>_build/htdocs/index.html
