@@ -1,0 +1,124 @@
+/* VERY SMALL RESET */
+
+*, *::after, *::before { box-sizing: border-box }
+body, p, h1, h2, h3, h4, h5, h6, ul, ol { margin: 0 }
+a { color: inherit }
+a:visited { color: inherit }
+address { font-style: normal; font-size: inherit }
+/* * { outline: 1px dashed greenyellow } */
+
+/* Start with fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Colours */
+:root {
+    --bg-green: rgb(46,81,2);
+    --bg-green-color: white;
+    --bg-red: rgb(88,0,16);
+    --bg-red-color: white;
+}
+
+/* Main layout */
+
+html {
+    /* is this correct? */
+    height: 100%;
+}
+
+.indexPage {
+    --layout-width: 41rem;
+}
+
+.indexPage body {
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+    min-height: 100%;
+}
+
+.indexPage body > header,
+.indexPage body > main,
+.indexPage body > footer {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--layout-width);
+    width: calc(100% - 0.25rem);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg-green);
+    color: var(--bg-green-color);
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.indexPage body > main {
+    flex-grow: 1;
+}
+
+/* The header */
+
+/* .indexPage body > header {
+    background-color: aqua;
+} */
+
+.indexPage body > header > img {
+    max-width: calc(100% + 1rem);
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    /* margin-bottom: -0.5rem; */
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+.indexPage body > header > img + * {
+    margin-top: -1.25rem;
+    background-color: white;
+    color: black;
+    /* margin-left: 2rem; */
+    width: fit-content;
+}
+
+/* The footer */
+
+.indexPage body > footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-red);
+    color: var(--bg-red-color);
+    font-size: smaller;
+    max-width: calc(var(--layout-width) + 1rem);
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* .indexPage body > footer {
+    padding-bottom: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    /* margin-bottom: 0.75rem; */
+}
+.indexPage body {
+    margin-bottom: -0.75rem;
+} */
+
+/* 
+.indexPage body > footer > * {
+    width: 100%;
+    min-width: 100%;
+} */
+
+/* The main content */
+.indexPage body > main {
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
+}
