@@ -1,3 +1,7 @@
+/* Use Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap');
+
 /* VERY SMALL RESET */
 
 *, *::after, *::before { box-sizing: border-box }
@@ -9,11 +13,13 @@ address { font-style: normal; font-size: inherit }
 
 /* Start with fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-html {
+/* html { */
+:root {
     font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.333; /* ~24px */
 }
+footer { font-family: 'IM Fell English' }
 
 /* Colours */
 :root {
@@ -104,10 +110,10 @@ html {
 /* .indexPage body > footer {
     padding-bottom: 0.75rem;
     border-bottom-left-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem; */
     /* margin-bottom: 0.75rem; */
-}
-.indexPage body {
+/* } */
+/* .indexPage body {
     margin-bottom: -0.75rem;
 } */
 
