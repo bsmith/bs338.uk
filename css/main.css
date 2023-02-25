@@ -97,10 +97,11 @@ html {
     background-color: var(--bg-red);
     color: var(--bg-red-color);
     font-size: smaller;
-    max-width: calc(var(--layout-width) + 1rem);
+    max-width: calc(var(--layout-width) + 0.5rem);
     /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
+    margin-top: -0.75rem;
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
     padding-left: 0.75rem;
@@ -146,6 +147,8 @@ ul.list-horiz, ol.list-horiz {
     background-color: white;
     color: black;
     padding: 0.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 ul.box-white, ol.box-white {
     padding: 0.25rem; /* higher priority! */
