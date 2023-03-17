@@ -44,6 +44,7 @@ html {
     display: flex;
     flex-direction: column;
     background-color: silver;
+    background-image: url(/img/noise_v1.png);
     min-height: 100%;
 }
 
